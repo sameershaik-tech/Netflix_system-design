@@ -35,6 +35,8 @@ How Netflix onboard a movie/video:
 Before the movie is made available to users, Netflix will convert the video into a format that works best for your devices. This process is called transcoding or encoding.
 
 Transcoding is the process of converting an audio or video file from one encoding format to another in order to increase the number of compatible target devices a media file can be played on.
+![live-transcoding-diagram-detailed-1140x630](https://user-images.githubusercontent.com/81900840/134773394-c5ace687-0eb2-474c-a197-d913598885b7.png)
+
 
 Whys do we need to do it? why cant we just play the source video?
 
