@@ -3,13 +3,19 @@
 
 
 Netflix operates in two clouds: 
+
 1.AWS 
+
 2.Open Connect.
 
 Both clouds must work together seamlessly to deliver endless hours of customer-pleasing video.
+
 Netflix has 3 main components which we are going to discuss today
+
 1.OC or netflix CDN
+
 2.backend
+
 3.client
 
 Before Deep Dive into the Netflix System Design Lets first talk about some high level working of Netflix and then jump in to these 3 components.
