@@ -24,9 +24,21 @@ The things which are not responsible for content serving is handled in AWS.
 
 Everything that happens after you hit play is handled by Open Connect. Open Connect is Netflix’s custom global content delivery network (CDN).
 
-Open Connect stores Netflix video in different locations throughout the world. And the content is displayed by the client is coming from near by
+Open Connect stores Netflix video in different locations throughout the world. And the content is displayed by the client is coming from near
+by open connect locations when you press the play button .
 
-open connect locations when you press the play button .
+CDN - A content delivery network (CDN) is a system of distributed servers (network) that deliver pages and other Web content to a user or a client, based on the geographic locations of the user, the origin of the webpage and the content delivery server.
+
+
+How Netflix onboard a movie/video:
+
+Before the movie is made available to users, Netflix will convert the video into a format that works best for your devices. This process is called transcoding or encoding.
+
+Transcoding is the process of converting an audio or video file from one encoding format to another in order to increase the number of compatible target devices a media file can be played on.
+
+Whys do we need to do it? why cant we just play the source video?
+
+The original movie/video comes in a high definition format that’s many terabytes in size. Also Netflix supports 2200 different devices. Each device has a video format that looks best on that particular device. If you’re watching Netflix on an iPhone, you’ll see a video that gives you the best viewing experience on the iPhone.
 
 
 
