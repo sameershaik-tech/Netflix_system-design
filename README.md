@@ -20,4 +20,14 @@ Netflix has 3 main components which we are going to discuss today
 
 Before Deep Dive into the Netflix System Design Lets first talk about some high level working of Netflix and then jump in to these 3 components.
 
+The things which are not responsible for content serving is handled in AWS.
+
+Everything that happens after you hit play is handled by Open Connect. Open Connect is Netflix’s custom global content delivery network (CDN).
+
+Open Connect stores Netflix video in different locations throughout the world. And the content is displayed by the client is coming from near by
+
+open connect locations when you press the play button .
+
+
+
 
