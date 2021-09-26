@@ -93,6 +93,10 @@ The second tier of the ELB service is an array of load balancer instances (provi
 
 ZUUL:
 
+![Screen Shot 2016-11-15 at 12 20 33](https://user-images.githubusercontent.com/81900840/134800265-47edcd9a-c970-43d2-b979-5028c9224887.png)
+
+ 
+
 
 
 
