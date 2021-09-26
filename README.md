@@ -54,6 +54,32 @@ OC Open connect comes in to picture, OC is Netflix own CDN no thirdparty CDN
 ![25067243468_6e16c1052a](https://user-images.githubusercontent.com/81900840/134799509-2f811f04-9867-4e60-9076-a1617f055c0e.jpg)
 
 
+Advantages of OC
+
+1.Less expensive
+2.Better quality
+3.More Scalable
+
+
+So once the videos are transcoded these files are pushed to all of the OC servers.
+
+When user loads Netflix app All requests are handled by server in AWS Eg: Login, recommendations, home page, users history, billing, customer support etc. Now you want to watch a video, when you click play button of the Video. Your app automatically figures out the best OC server, best format and best bitrate for you and then the video is streamed from a nearby Open Connect Appliance (OCA) in the Open Connect CDN.
+
+The Netfix apps are so intelligent that they constantly check for best streaming server and bitrate for you and switches between formats and servers to give best viewing experience for you.
+
+Now what netflix does is with all of your search, viewing, location, device, reviews and likes data on AWS it uses Hadoop | Machine learning models to recommend new movies which you might like…
+
+And this cycle goes on and on
+
+Netflix supports 2200 different devices,including smart Tv ,Android,Ios,Gaming consoles and web apps.
+
+
+Netflix Built using React JS:
+
+
+
+
+
 
 
 
