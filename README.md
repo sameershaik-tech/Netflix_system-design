@@ -49,6 +49,13 @@ Thats a lot of files and processing to do transcoding Now we have all the files 
 OC Open connect comes in to picture, OC is Netflix own CDN no thirdparty CDN
 
 
+![tier-fill](https://user-images.githubusercontent.com/81900840/134799479-497c8cd0-a03c-44a8-9dd1-c28c431eeabb.png)
+![0_uVkn1qszk2fH9IjT](https://user-images.githubusercontent.com/81900840/134799490-ba58cecb-7d3a-4b00-8bb5-675a115c1489.jpeg)
+![25067243468_6e16c1052a](https://user-images.githubusercontent.com/81900840/134799509-2f811f04-9867-4e60-9076-a1617f055c0e.jpg)
+
+
+
+
 
 
 
