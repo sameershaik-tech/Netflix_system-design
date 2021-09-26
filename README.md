@@ -150,6 +150,9 @@ IE. If a micro service is failing then return the default response and wait unti
 
 Microservices:
 
+![netflix-microservices-diagram](https://user-images.githubusercontent.com/81900840/134801233-375af8ab-2c24-4035-95f1-e99a626dea39.jpg)
+
+
 
 
 
