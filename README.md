@@ -47,6 +47,7 @@ Netflix also creates files optimized for different network speeds. If you’re w
 Thats a lot of files and processing to do transcoding Now we have all the files we need to stream it.
 
 OC Open connect comes in to picture, OC is Netflix own CDN no thirdparty CDN
+[Untitled document (10).pdf](https://github.com/sameershaik-tech/Netflix_system-design/files/7230972/Untitled.document.10.pdf)
 
 
 
