@@ -42,6 +42,12 @@ Whys do we need to do it? why cant we just play the source video?
 
 The original movie/video comes in a high definition format that’s many terabytes in size. Also Netflix supports 2200 different devices. Each device has a video format that looks best on that particular device. If you’re watching Netflix on an iPhone, you’ll see a video that gives you the best viewing experience on the iPhone.
 
+Netflix also creates files optimized for different network speeds. If you’re watching on a fast network, you’ll see higher quality video than you would if you’re watching over a slow network. And also depends on your Netflix plan. that said netflix does create approx 1,200 files for every movie !!!!
+
+Thats a lot of files and processing to do transcoding Now we have all the files we need to stream it.
+
+OC Open connect comes in to picture, OC is Netflix own CDN no thirdparty CDN
+
 
 
 
