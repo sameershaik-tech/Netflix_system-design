@@ -133,6 +133,25 @@ Advantages: ??
 
 Hystrix:
 
+![reservation-system-diagram](https://user-images.githubusercontent.com/81900840/134801029-68565c28-88eb-456f-b6b3-5968bae14b9f.png)
+
+Hystrix is a latency and fault tolerance library designed to isolate points of access to remote systems, services and 3rd party libraries. which helps in
+
+Stop cascading failures
+
+Realtime monitoring of configurations changes
+
+Concurrency aware request caching
+
+Automated batching through request collapsing
+
+IE. If a micro service is failing then return the default response and wait until it recovers.
+
+
+Microservices:
+
+
+
 
 
 
