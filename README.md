@@ -84,8 +84,8 @@ Netflix Built using React JS:
 
 React was influenced by a number of factors, most notably:
 1) startup speed, 
-2) 2) runtime performance, and 
-3) 3) modularity
+2)  runtime performance, and 
+3) modularity
 
 Netflix uses Amazons Elastic Load Balance (ELB) service to route traffic to our front end services. ELB’s are setup such that load is balanced across zones first, then instances. This is because the ELB is a two tier load balancing scheme.
 
@@ -95,7 +95,37 @@ ZUUL:
 
 ![Screen Shot 2016-11-15 at 12 20 33](https://user-images.githubusercontent.com/81900840/134800265-47edcd9a-c970-43d2-b979-5028c9224887.png)
 
- 
+The Netty handlers on the front and back of the filters are mainly responsible for handling the network protocol, web server, connection management and proxying work. With those inner workings abstracted away, the filters do all of the heavy lifting.
+
+The inbound filters run before proxying the request and can be used for authentication, routing, or decorating the request.
+
+The endpoint filters can either be used to return a static response or proxy the request to the backend service (or origin as we call it).
+
+The outbound filters run after a response has been returned and can be used for things like gzipping, metrics, or adding/removing custom headers.
+
+
+Features:
+
+1.Supports http2
+2.mutual TLS
+3.Adaptive retries
+4.Concorrency protection for origin
+
+
+It helps in Easy routing based on query params, url, path. The main use case is for routing traffic to a specific test or staging cluster.
+
+
+Advantages: ??
+
+1.Authentication and Security: identifying authentication requirements for each resource.
+2.Insights and Monitoring: tracking meaningful data and statistics.
+3.Dynamic Routing: dynamically routing requests to different backend..
+4.Stress Testing: gradually increasing the traffic.
+5.Load Shedding: allocating capacity for each type of request and dropping requests.
+6.Static Response handling: building some responses directly.
+7.Multiregion Resiliency: routing requests across AWS regions.
+
+Hystrix
 
 
 
