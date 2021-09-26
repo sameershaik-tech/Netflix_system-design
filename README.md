@@ -32,7 +32,7 @@ CDN - A content delivery network (CDN) is a system of distributed servers (netwo
 
 How Netflix onboard a movie/video:
 
-![What-is-ReactJS](https://user-images.githubusercontent.com/81900840/134799892-66e8dd6d-bfe2-4f7e-be2d-bbf8a5a83cb2.jpg)
+
 
 
 Before the movie is made available to users, Netflix will convert the video into a format that works best for your devices. This process is called transcoding or encoding.
@@ -78,6 +78,12 @@ Netflix supports 2200 different devices,including smart Tv ,Android,Ios,Gaming c
 
 
 Netflix Built using React JS:
+![What-is-ReactJS](https://user-images.githubusercontent.com/81900840/134799892-66e8dd6d-bfe2-4f7e-be2d-bbf8a5a83cb2.jpg)
+
+React was influenced by a number of factors, most notably:
+1) startup speed, 
+2) 2) runtime performance, and 
+3) 3) modularity
 
 
 
