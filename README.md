@@ -118,14 +118,21 @@ It helps in Easy routing based on query params, url, path. The main use case is 
 Advantages: ??
 
 1.Authentication and Security: identifying authentication requirements for each resource.
+
 2.Insights and Monitoring: tracking meaningful data and statistics.
+
 3.Dynamic Routing: dynamically routing requests to different backend..
+
 4.Stress Testing: gradually increasing the traffic.
+
 5.Load Shedding: allocating capacity for each type of request and dropping requests.
+
 6.Static Response handling: building some responses directly.
+
 7.Multiregion Resiliency: routing requests across AWS regions.
 
-Hystrix
+Hystrix:
+
 
 
 
