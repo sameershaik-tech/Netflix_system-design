@@ -152,6 +152,60 @@ Microservices:
 
 ![netflix-microservices-diagram](https://user-images.githubusercontent.com/81900840/134801233-375af8ab-2c24-4035-95f1-e99a626dea39.jpg)
 
+What is Microservices?
+
+
+Microservice architecture, or simply microservices, is a distinctive method of developing software systems that tries to focus on building single-function modules with well-defined interfaces and operations.
+
+
+How APIS gets response?
+
+Netflix uses MicroServices architecture to power all of the APIs needed for applications and Webapps. Each API calls the other micro services for required data and then responds with complete response
+
+1.We can use Hysterix which i aready explained
+
+2.We separate critical services
+
+Critical Micro services:
+
+What netflix does is, they identify few service as critical (so that at last user can see recommended hit and play, in case of cascaded service failure) and these micro services works without many dependencies to other services !!
+
+Stateless Services:
+
+One of the major design goals of the Netflix architecture's is stateless services.
+
+These services are designed such that any service instance can serve any request in a timely fashion and so if a server fails it’s not a big deal. In the failure case requests can be routed to another service instance and we can automatically spin up a new node to replace it.
+
+EVCache:
+
+When a node goes down all the cache goes down along with it. so performace hit until all the data is cached. so what netflix did is they came up with EVcache. It is wrapper around Memcached but it is sharded so multiple copies of cache is stored in sharded nodes. So everytime the write happens, all the shards are updated too..
+
+When cache reads happens, read from nearest cache or nodes, but when a node is not available, read from different available node. It handles 30 million request a day and linear scalability with milliseconds latency.
+
+SSDs for Caching:
+
+Storing large amounts of data in volatile memory (RAM) is expensive. Modern disk technologies based on SSD are providing fast access to data but at a much lower cost when ]
+
+compared to RAM. Hence, we wanted to move part of the data out of memory without sacrificing availability or performance. The cost to store 1 TB of data on SSD is much lower
+than storing the same amount in RAM.
+
+EC2 MySQL was ultimately the choice for the billing/user info use case, Netflix built MySQL using the InnoDB engine large ec2 instances. They even had master master like setup with “Synchronous replication protocol” was used to enable the write operations on the primary node to be considered completed. Only after both the local and remote writes have been confirmed.
+
+As a result, the loss of a single node is guaranteed to have no data loss. This would impact the write latency, but that was well within the SLAs.
+
+Read replica setup in local, as well as cross region, not only met high availability requirements, but also helped with scalability.
+
+The read traffic from ETL jobs was diverted to the read replica, sparing the primary database from heavy ETL batch processing. In case of the primary MySQL database failure, a failover is performed to the secondary node that was being replicated in synchronous mode. Once secondary node takes over the primary role, the route53 DNS entry for database host is changed to point to the new primary.
+
+Cassandra: -> 500 nodes 50 clusters
+
+https://medium.com/netflix-techb...
+
+Cassandra is a free and open-source distributed wide column store NoSQL database designed to handle large amounts of data across many commodity servers, providing high availability with no single point of failure
+
+
+
+
 
 
 
