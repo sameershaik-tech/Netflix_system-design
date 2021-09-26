@@ -78,12 +78,22 @@ Netflix supports 2200 different devices,including smart Tv ,Android,Ios,Gaming c
 
 
 Netflix Built using React JS:
+
+
 ![What-is-ReactJS](https://user-images.githubusercontent.com/81900840/134799892-66e8dd6d-bfe2-4f7e-be2d-bbf8a5a83cb2.jpg)
 
 React was influenced by a number of factors, most notably:
 1) startup speed, 
 2) 2) runtime performance, and 
 3) 3) modularity
+
+Netflix uses Amazons Elastic Load Balance (ELB) service to route traffic to our front end services. ELB’s are setup such that load is balanced across zones first, then instances. This is because the ELB is a two tier load balancing scheme.
+
+The second tier of the ELB service is an array of load balancer instances (provisioned directly by AWS), which does round robin load balancing over our own instances that are behind it in the same zone.
+
+ZUUL:
+
+
 
 
 
